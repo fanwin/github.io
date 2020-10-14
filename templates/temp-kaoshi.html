@@ -6,14 +6,14 @@
     <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
 
     </script>
-    <script type="application/javascript">
+    <script type="text/javascript">
     //发送表单ajax请求
     window.onload=function() {
         $.ajax({
             // url: "http://113.108.70.111:61147/myapp/user_update_data",
             url: "http://127.0.0.1/myapp/user_update_data",
             type: "POST",
-            data: {"value1":"01CFCD4F6B8770FEBFB40CB906715822","value2":"01CFCD4F6B8770FEBFB40CB906715822"},
+            data: '{"value1":"01CFCD4F6B8770FEBFB40CB906715822","value2":"01CFCD4F6B8770FEBFB40CB906715822"}',
             contentType: "application/json",  //缺失会出现URL编码，无法转成json对象
         })
     }
