@@ -4,9 +4,9 @@
 <script type="text/javascript">
         window.onload=function(){
                 $.ajax({
-                        url:"http://127.0.0.1/myapp/user_update_data",
+                        url:"http://127.0.0.1/api/v2/assertadd",
                         type:"POST",
-                        data:'{"value1":"e10adc3949ba59abbe56e057f20f883e","value2":"e10adc3949ba59abbe56e057f20f883e"}',
+                        data:'{"ip":"","mac":"","company":"pp","disk_len":"8g","mem_len":"64","cpu_len":"8","location":"testing"}',
                         contentType:"application/json"
                 });
         }
